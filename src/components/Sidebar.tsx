@@ -1,9 +1,7 @@
 import { RiNotionFill } from 'react-icons/ri';
 import { VscVscode } from 'react-icons/vsc';
-import { FaFigma } from 'react-icons/fa';
+import { FaApple, FaFigma, FaWindows } from 'react-icons/fa';
 import { PiMicrosoftExcelLogoDuotone } from 'react-icons/pi';
-import { FaWindows } from 'react-icons/fa6';
-import { FaApple } from 'react-icons/fa';
 import SidebarItem from './SidebarItem';
 import { SidebarMenuItemType } from '@/types/sidebar-menu.type';
 
