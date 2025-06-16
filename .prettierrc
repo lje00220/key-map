@@ -8,7 +8,7 @@
   "quoteProps": "as-needed",
   "jsxSingleQuote": false,
   "trailingComma": "all",
-  "bracketSpacing": false,
+  "bracketSpacing": true,
   "arrowParens": "always",
   "endOfLine": "lf",
   "embeddedLanguageFormatting": "auto",
