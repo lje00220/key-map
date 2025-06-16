@@ -7,17 +7,14 @@ const nexonGothic = localFont({
     {
       path: '/fonts/NEXONLv1GothicBold.ttf',
       weight: '700',
-      style: 'bold',
     },
     {
       path: '/fonts/NEXONLv1GothicRegular.ttf',
       weight: '400',
-      style: 'normal',
     },
     {
       path: '/fonts/NEXONLv1GothicLight.ttf',
       weight: '300',
-      style: 'light',
     },
   ],
   variable: '--font-nexon-gothic',
