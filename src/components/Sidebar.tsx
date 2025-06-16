@@ -28,8 +28,8 @@ const Sidebar = () => {
 
       {/* 사이드바 컨텐츠 영역 */}
       <div className="flex-1 space-y-2">
-        {MENU_ITEMS.map((item, idx) => (
-          <SidebarItem key={idx} item={item} />
+        {MENU_ITEMS.map((item) => (
+          <SidebarItem key={item.label} item={item} />
         ))}
       </div>
 

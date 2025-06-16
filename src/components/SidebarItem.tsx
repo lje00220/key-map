@@ -11,10 +11,10 @@ type SidebarItemProps = {
  */
 const SidebarItem = ({ item }: SidebarItemProps) => {
   return (
-    <div className="flex cursor-pointer justify-between px-6 py-4 hover:bg-blue-900">
+    <button className="flex w-full cursor-pointer justify-between px-6 py-4 hover:bg-blue-900 focus:outline-none">
       <span>{item.label}</span>
       <item.icon size={24} />
-    </div>
+    </button>
   );
 };
 
