@@ -18,7 +18,12 @@ const SearchBox = ({ value, onChangeHandler, onClickHandler, ...props }: SearchB
         onChange={onChangeHandler}
         {...props}
       />
-      <button onClick={onClickHandler} className="absolute right-2 top-1/2 -translate-y-1/2">
+      <button
+        aria-label="기능 검색"
+        type="button"
+        onClick={onClickHandler}
+        className="absolute right-2 top-1/2 -translate-y-1/2"
+      >
         <BiSearchAlt size={24} />
       </button>
     </div>

@@ -25,7 +25,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         type={type}
         className={cn(InputVariants({ variant, className }))}
         ref={ref}
-        placeholder={props.placeholder}
         {...props}
       />
     );
