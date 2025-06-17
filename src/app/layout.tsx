@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import Sidebar from '@/components/Sidebar';
 import './globals.css';
 
 const nexonGothic = localFont({
@@ -32,7 +33,12 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="ko">
-      <body className={nexonGothic.className}>{children}</body>
+      <body className={nexonGothic.className}>
+        <main className="flex h-screen">
+          <Sidebar />
+          <div className="flex-1">{children}</div>
+        </main>
+      </body>
     </html>
   );
 };
