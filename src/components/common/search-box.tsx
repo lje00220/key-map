@@ -1,19 +1,14 @@
 import { BiSearchAlt } from 'react-icons/bi';
 import Input from './input';
-import { InputHTMLAttributes } from 'react';
+import { ChangeEvent, InputHTMLAttributes, MouseEvent } from 'react';
 
 type SearchBoxProps = {
   value: string;
-  onChangeHandler: () => void;
-  onClickHandler: () => void;
-};
+  onChangeHandler: (e: ChangeEvent<HTMLInputElement>) => void;
+  onClickHandler: (e: MouseEvent<HTMLButtonElement>) => void;
+} & InputHTMLAttributes<HTMLInputElement>;
 
-const SearchBox = ({
-  value,
-  onChangeHandler,
-  onClickHandler,
-  ...props
-}: InputHTMLAttributes<HTMLInputElement> & SearchBoxProps) => {
+const SearchBox = ({ value, onChangeHandler, onClickHandler, ...props }: SearchBoxProps) => {
   return (
     <div className="relative flex items-center justify-center">
       <Input
